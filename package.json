@@ -29,10 +29,11 @@
   "dependencies": {
     "domready": "^1.0.8",
     "react": "0.14.x",
+    "react-bootstrap": "^0.28.2",
     "react-dom": "0.14.x",
     "react-komposer": "1.x.x",
-    "react-simple-di": "1.x.x",
-    "react-mounter": "1.x.x"
+    "react-mounter": "1.x.x",
+    "react-simple-di": "1.x.x"
   },
   "private": true
 }

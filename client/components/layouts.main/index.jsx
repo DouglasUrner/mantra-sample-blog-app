@@ -15,7 +15,7 @@ const Layout = ({content = () => null }) => (
       <div className="container">
         <p className="text-muted">
           Built with <a href='https://github.com/kadirahq/mantra'>Mantra </a>
-          & Meteor.
+          & <a href="https://www.meteor.com/">Meteor</a>.
         </p>
       </div>
     </footer>

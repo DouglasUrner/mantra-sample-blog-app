@@ -2,4 +2,5 @@
 
 ## Branch: use-bootstrap-flow-router
 
-Add Meteor package [twbs:bootstrap]()
+Add [Bootstrap](http://getbootstrap.com) Meteor
+package [twbs:bootstrap]()

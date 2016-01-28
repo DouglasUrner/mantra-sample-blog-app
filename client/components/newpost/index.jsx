@@ -4,6 +4,7 @@
 // as shown below
 import React from 'react';
 // import React from 'react';
+import ReactQuill from 'react-quill';
 
 class NewPost extends React.Component {
   render() {
@@ -13,9 +14,21 @@ class NewPost extends React.Component {
         <h2>Add New Post</h2>
         {error ? <p style={{color: 'red'}}>{error}</p> : null}
 
-        <input ref="titleRef" type="Text" placeholder="Enter your post title." /> <br/>
-        <textarea ref="contentRef" placeholder="Enter your post content." /> <br/>
-        <button onClick={this.createPost.bind(this)}>Add New</button>
+        <div className="form-group">
+          <input ref="titleRef" type="text" className="form-control" id="title"
+            placeholder="Enter your post title." />
+        </div>
+
+        <div>
+          <ReactQuill value={this.state.value} />
+        </div>
+        <div className="btn-group">
+          <button type="button" className="btn"
+            onClick={this.createPost.bind(this)}>
+            Add New
+          </button>
+        </div>
+
       </div>
     );
   }

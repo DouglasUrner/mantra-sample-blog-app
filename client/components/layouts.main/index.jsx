@@ -4,11 +4,11 @@ import React from 'react';
 const Layout = ({content = () => null }) => (
   <div>
     <header>
-      <Navigation />
+      <Navigation/>
     </header>
 
-    <div>
-    {content()}
+    <div className="container">
+      {content()}
     </div>
 
     <footer>

@@ -7,6 +7,9 @@ const Post = ({post}) => (
     <p>
       {post.content}
     </p>
+    <hr/>
+    <p>by: <b>{Meteor.users.findOne(post.uid).profile.name}</b>
+    , {post.createdAt.toString()} ({post.ipaddr})</p>
   </div>
 );
 

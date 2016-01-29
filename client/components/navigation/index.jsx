@@ -1,5 +1,7 @@
 import React from 'react';
 
+const LoginButtons = BlazeToReact("_loginButtons");
+
 const Navigation = () => (
   <nav className="navbar navbar-default">
     <div className="container-fluid">
@@ -23,6 +25,10 @@ const Navigation = () => (
           <li>
             <a href="/new-post">New Post</a>
           </li>
+        </ul>
+        <ul className="nav navbar-nav navbar-right">
+          <br/>
+          <LoginButtons align="right"/>
         </ul>
       </div>
     </div>

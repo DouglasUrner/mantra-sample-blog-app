@@ -4,6 +4,7 @@
 // as shown below
 import React from 'react';
 // import React from 'react';
+import logger from '/libs/logger.js';
 
 class NewPost extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class NewPost extends React.Component {
   }
 
   createPost() {
+    logger('debug', 'createPost()', 'props = ', this.props, 'refs = ', this.refs);
     const {create} = this.props;
     const {titleRef, contentRef} = this.refs;
 
